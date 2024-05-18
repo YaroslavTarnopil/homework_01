@@ -26,9 +26,9 @@ class Organization(AddressBook):
         return f"{self.name} located at {self.address}. Email: {self.email}"
 
 # Тестуємо реалізацію
-person1 = Person("Taras Schevchenko", "Kyiv DniproSt", "555-1234")
+person1 = Person("Taras Shevchenko", "Kyiv DniproSt", "555-1234")
 org1 = Organization("ABC Inc.", "456 Elm St", "info@shevchenko.com")
 
-print(person1.contact())  # Виведе: John Doe lives at 123 Main St. Contact: 555-1234
-print(org1.contact())     # Виведе: ABC Inc. located at 456 Elm St. Email: info@abcinc.com
+print(person1.contact())  # Виведе: Taras Shevchenko lives Kyiv Dnipro St. Contact: 555-1234
+print(org1.contact())     # Виведе: ABC Inc. located at 456 Elm St. Email: info@shevchenko.com
 
